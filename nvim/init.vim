@@ -26,6 +26,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
 Plug 'wfxr/minimap.vim' "Requiers https://github.com/wfxr/code-minimap)
+Plug 'andweeb/presence.nvim' "Discord Rich presence)
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus
@@ -35,7 +36,8 @@ nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
-:colorscheme PaperColor  
+" only when you are using Airline themes
+" :colorscheme PaperColor  
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -55,9 +57,9 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>" 
 
+--- Mini map settings ---
 let g:minimap_width = 10
 let g:minimap_auto_start = 1
 let g:minimap_auto_start_win_enter = 1
