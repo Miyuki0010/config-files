@@ -25,6 +25,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
+Plug 'wfxr/minimap.vim' "Requiers https://github.com/wfxr/code-minimap)
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus
